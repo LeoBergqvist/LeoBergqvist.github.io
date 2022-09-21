@@ -230,6 +230,9 @@ header {
     }
 }
 
+.section__skills {
+    font-size:40px;
+}
 
 @media (min-width: 600px) {
     .intro {
@@ -269,6 +272,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    filter: saturate(0%);
 }
 
 @media (min-width: 600px) {
