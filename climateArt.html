@@ -41,22 +41,65 @@
             <img src="img_Leo/climateAR1_cr.png" alt="" class="intro__img">
         </section>
         
-        <div class="portfolio-item-individual">
-            <p>Description: An educational experience for elementary school students about
-                emissions from different energy sources. <a href="https://dh2413-group4-macrophighters.github.io/Climate-Project-Web/"><strong>Link:</strong></a>
+ <div class="portfolio-item-individual">
+    <p>
+        <strong>Description:</strong> An educational experience for elementary school students about
+        emissions from different energy sources. 
+        <a href="https://dh2413-group4-macrophighters.github.io/Climate-Project-Web/"><strong>Link:</strong></a>
+    </p>
 
-                </p>
-            <img src="img_Leo/climateAR1.png" alt="">            
-            
-        </div>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            
-        </footer>
-        
-        <script src="js/index.js"></script>
-        
+    <img src="img_Leo/climateAR1.png" alt="Climate_ART Screenshot">    
+
+    <p><strong>Overview</strong></p>
+    <p>
+        ClimateART was an interactive, collaborative platform that allowed users to explore a shared virtual planet, visualize power plants and CO₂ emissions, and leave interactive “footprints” for others to build upon. It was inspired by the theme <em>“The future of learning about STEM”</em> and aligned with Swedish curriculum goals on energy and environmental impact. The project was also timely with the COP26 climate conference.
+    </p>
+
+    <p><strong>Development Timeline</strong></p>
+    <ul>
+        <li><strong>Weeks 1–2:</strong> The team brainstormed and defined the scope.</li>
+        <li><strong>Weeks 3–5:</strong> Three one-week sprints focused on product development.</li>
+        <li><strong>Week 6:</strong> The team finalized integration and presented the project to the public.</li>
+    </ul>
+
+    <p><strong>Core Goals</strong></p>
+    <ul>
+        <li>Enable interactive, cross-platform collaboration.</li>
+        <li>Create visually engaging and appealing graphics.</li>
+        <li>Provide an effective learning experience about climate issues.</li>
+    </ul>
+
+    <p><strong>Technical Implementation</strong></p>
+    <p><strong>MVP:</strong> The team used Node.js with Socket.io for platform connections, combining a Unity 3D world with a browser-based 2D map (Leaflet.js). Users could tap the map to place trees, which appeared in the 3D world.</p>
+    <p><strong>Enhancements:</strong></p>
+    <ul>
+        <li><strong>Interaction:</strong> Users could select from multiple objects, choose aliases, and interact via a mobile-responsive Onsen UI interface.</li>
+        <li><strong>Graphics:</strong> A detailed 3D world and models were created in Blender and imported into Unity; shaders for water and cables were scripted.</li>
+        <li><strong>Logic:</strong> A CO₂ emission graph and energy source bar were displayed in Unity; a day/night cycle and environmental effects like fog appeared when emissions rose too high.</li>
+    </ul>
+
+    <p><strong>User Testing & Deployment</strong></p>
+    <p>
+        The project was deployed on a Raspberry Pi, and participants joined by scanning a QR code on their own devices. It was demonstrated to the public during open house events, where users tested the system and explored the virtual world.
+    </p>
+
+    <p><strong>Challenges & Learnings</strong></p>
+    <ul>
+        <li>Overcoming challenges to make the visual experience interactive and engaging required creative problem-solving and iterative user feedback.</li>
+        <li>Designing a clear and useful user interface for end users is essential to ensure ease of navigation and engagement.</li>
+        <li>Adding world effects such as weather cycles and increasing smoke from pollution significantly enhances user immersion in the virtual environment.</li>
+    </ul>
+
+
+    <p><strong>Future Potential</strong></p>
+    <p>
+        The project served as a proof of concept with strong potential for expansion in education, collaboration, and environmental exploration.
+    </p>
+</div>
+
+   
+    <footer class="footer">
+        <a href="index.html" class="footer__link">Go back</a>        
+    </footer>
     </body>
 </html>

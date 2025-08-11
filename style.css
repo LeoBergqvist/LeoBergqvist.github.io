@@ -441,3 +441,9 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.portfolio-item-individual ul {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
