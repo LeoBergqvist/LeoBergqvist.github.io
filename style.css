@@ -16,6 +16,9 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #ff982a;
+
+    --clr-cleaning: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 40%, #fbc2eb 70%, #a6c1ee 100%);
+
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -104,6 +107,7 @@ h3 { font-size: var(--fs-h3) }
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
+
 
 .section__experience {
     border-style: dotted;
@@ -208,9 +212,17 @@ header {
     box-shadow: var(--bs);
 }
 
-.section__subtitle--intro {
-    display: inline-block;
-}
+.section__subtitle--intro--cleaning {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+        display: inline-block;
+        background: var(--clr-cleaning);
+    }
 
 @media (min-width: 600px) {
     .intro {
@@ -239,6 +251,7 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        display: inline-block;
     }
 }
 
@@ -273,6 +286,7 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        display: inline-block;
     }
 }
 
@@ -447,3 +461,29 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+#musicButton {
+      position: absolute;
+      top: 20px;       /* distance from top */
+      right: 20px;     /* distance from right */
+      padding: 10px 15px;
+      font-family: var(--ff-primary);
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--clr-accent);
+      color: var(--clr-dark);
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    }
+
+    #musicButton:hover {
+      background-color: #faa851;
+    }
+
+canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Push canvas behind everything */
+    }
