@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -18,7 +16,6 @@
     --clr-accent: #ff982a;
 
     --clr-cleaning: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 40%, #fbc2eb 70%, #a6c1ee 100%);
-
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -49,7 +46,6 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -91,7 +87,6 @@ h3 {
 }
 
 
-
 .section__title {
     margin-bottom: .25em;
     color: var(--clr-dark)
@@ -116,11 +111,11 @@ h3 {
     font-family: var(--ff-secondary);
 }
 
-
 .section__experience {
     border-style: dotted;
     border-color: var(--clr-dark);
 }
+
 
 /* header */
 
@@ -180,40 +175,6 @@ header {
     top: 1em;
     z-index: 1000;
 }
-
-.hamburger {
-    display: block;
-    position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.hamburger::before {
-    top: 6px;
-}
-
-.hamburger::after {
-    bottom: 6px;
-}
-
-
 
 /*  Intro section  */
 
@@ -360,6 +321,40 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
+.portfolio__item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.portfolio__overlay {
+    position: relative;
+}
+
+.portfolio__img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.overlay__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.portfolio__item:hover .portfolio__img {
+    transform: scale(1.03);
+}
+
 /* Styles for mobile screens */
 @media (max-width: 768px) {
     .portfolio {
@@ -371,8 +366,6 @@ header {
     background: var(--clr-accent);
     overflow: hidden;
     margin: 5px;
-
-
 }
 
 .portfolio__img {
@@ -409,8 +402,8 @@ header {
     text-decoration: none;
 }
 
-/* 
-.footer__link {
+
+/* .footer__link {
     font-weight: var(--fw-bold);
 } */
 
@@ -419,13 +412,10 @@ header {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--clr-dark);
-    /* Green background */
     color: white;
     text-align: center;
     text-decoration: none;
-    /* Removes underline */
     border-radius: 5px;
-    /* Rounded corners */
     font-size: var(--fs-h3);
     cursor: pointer;
     margin: 5px;
@@ -433,7 +423,6 @@ header {
 
 .mail-button:hover {
     background-color: #45a049;
-    /* Darker green when hovered */
 }
 
 .footer__link:hover,
@@ -484,9 +473,7 @@ header {
 #musicButton {
     position: absolute;
     top: 20px;
-    /* distance from top */
     right: 20px;
-    /* distance from right */
     padding: 10px 15px;
     font-family: var(--ff-primary);
     font-size: 16px;
