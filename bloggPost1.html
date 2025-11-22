@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Bergqvist Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+</head>
+
+<body>
+
+    <script src="js/index.js"></script>
+
+
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">UX and accesibility</h2>
+        <p class="section__subtitle section__subtitle--about">UX, Design, StockholmJS</p>
+        <img src="img_Leo/stockholm_winter.jpg" alt="a picture of me" class="about-me__img">
+        <div class="about-me__body">
+
+            <article>
+
+
+                <p>"A practical exploration of tools, ideas, and principles that make the web work better for
+                    everyone."</p>
+
+
+                <section>
+                    <h2>Starting the Journey</h2>
+                    <p>This is the first post in a series where I’ll dive into UX and
+                        accessibility; two topics that, once you really understand them, change how you see
+                        the digital world.</p>
+
+                    <p>Back in university, I had a lecturer who left a mark on me. He wasn’t teaching accessibility
+                        from a distance; As a kid, he had been bound to a wheelchair, and later he worked
+                        on all kinds of initiatives;from collaborating with disability groups to helping homeless
+                        individuals build systems and habits to get back on their feet. He was essentially doing
+                        real-world behavior design long before I even knew what that meant.</p>
+
+                    <p>In his course I learned about visual and hearing impairments, but also
+                        the less visible ones; ADHD, Asperger’s, and other neurodivergences that fundamentally shift how
+                        someone experiences the web. Suddenly, “good UX” wasn’t just about clean interfaces. It was
+                        about creating environments where more people can succeed with less friction.</p>
+
+                    <p>One day he took us to an office staffed largely by people with disabilities. Watching them work
+                        was like discovering hidden layers in tools we all take for granted. For example, watching a
+                        blind user type on an iPhone using braille input:</p>
+
+                    <figure>
+                        <figcaption>Example: Typing Braille on an iPhone</figcaption>
+                        <p><a
+                                href="https://www.youtube.com/results?search_query=Entering+braille+on+my+iPhone+as+a+blind+person">Entering
+                                braille on my iPhone as a blind person — YouTube</a></p>
+                    </figure>
+
+                    <p>I also learned that every feature in Facebook is accessible via keyboard alone—useful not only
+                        for blind users but for anyone with limited vision or motor challenges. These small
+                        considerations compound into real-world impact.</p>
+                </section>
+
+                <section>
+                    <h2>Why Accessibility Matters More Than Ever</h2>
+                    <p>Today, accessibility isn’t just a nice-to-have; it’s increasingly a legal requirement.
+                        Initiatives
+                        like <strong>WCAG</strong> and the broader <strong>A11y</strong> movement (pronounced
+                        “A-one-one-Y”) provide frameworks that help us design in a way that includes more people instead
+                        of excluding them.</p>
+
+                    <p>Because I want to actively contribute to this space in my work, I’m exploring these frameworks,
+                        test the tools, and share the practical bits; so you can improve
+                        your own code and process too. Even if only a few people read this blog, it will serve as a
+                        place for me to point to when other's say “Where should I begin?”</p>
+                </section>
+
+                <section>
+                    <h2>A Talk Worth Starting With</h2>
+                    <p>To kick things off, I’m using a fantastic conference talk from NordicJS. It’s approachable but
+                        packed with the kind of insights that make you pause the video to take notes. The speaker lays
+                        out several foundational concepts and tools I’ll be exploring throughout this series.</p>
+
+                    <figure>
+                        <figcaption>Nordic.js 2025 • Geisy Domiciano — Access-what? Why and How. A11Y for All
+                        </figcaption>
+                        <p><a
+                                href="https://www.youtube.com/results?search_query=NordicJS+2025+Geisy+Domiciano+Access-what">Watch
+                                on YouTube</a></p>
+                    </figure>
+
+                    <h3>What Is Accessibility?</h3>
+
+                    <blockquote>
+                        <p><strong>“Accessibility is the quality of being easily reached, entered, or used by people who
+                                have a disability.”</strong></p>
+                    </blockquote>
+
+                    <p>That’s the core. Everything else—guidelines, standards, best practices—are simply structured ways
+                        of getting there.</p>
+
+                    <p>And accessibility isn’t just for websites. As the talk points out, it applies to everything
+                        around the web: tools, technologies, interfaces, mobile devices, smartwatches, and whatever we
+                        invent next.</p>
+
+                    <blockquote>
+                        <p>“It’s not just the web. It’s the tools around it;and the expectation that anyone with a
+                            disability can use them… via any device we have now or invent in the future.”</p>
+                    </blockquote>
+
+                    <figure>
+                        <figcaption>A slide illustrating what accessibility progressively enables for users.
+                        </figcaption>
+                        <p>(Slide content summarized conceptually.)</p>
+                    </figure>
+
+                    <figure>
+                        <figcaption>A slide giving an overview of common disability categories.</figcaption>
+                        <p>(Slide content summarized conceptually.)</p>
+                    </figure>
+
+                    <h3>Accessibility Helps All of Us</h3>
+
+                    <p>Here’s where it gets interesting: accessibility isn’t just for “other people.” You and I benefit
+                        from it constantly.</p>
+
+                    <ul>
+                        <li>Old phone</li>
+                        <li>Broken arm</li>
+                        <li>Eye infection</li>
+                        <li>Noisy environment</li>
+                        <li>Bright sunlight</li>
+                        <li>Slow internet or limited bandwidth</li>
+                    </ul>
+
+                    <p>If the design works in these edge cases, it almost certainly improves the experience for the
+                        average user. This is why designing for the extremes is one of the most powerful concepts in
+                        product development.</p>
+
+                    <p>And if you’re in the EU, accessibility is now encouraged—and in many cases enforced—by law.</p>
+                </section>
+
+                <section>
+                    <h2>WCAG: The Framework Behind It All</h2>
+                    <p>WCAG—the Web Content Accessibility Guidelines—is the backbone of global accessibility standards.
+                        It defines three levels of accessibility and provides a structured way to evaluate your site.
+                    </p>
+                    <p>This topic deserves its own deep-dive post, so I’ll save the full breakdown for later.</p>
+                </section>
+
+                <section>
+                    <h2>Resources, Tools, and Quick Wins</h2>
+
+                    <p>Here are some of the most useful tools and references mentioned in the talk—plus a few of my own
+                        favorites:</p>
+
+                    <ul>
+                        <li>
+                            <strong>All HTML tags and their proper usage:</strong><br>
+                            <a href="https://allthetags.com/">allthetags.com</a>
+                        </li>
+                        <li>
+                            <strong>Free introductory course on Web Accessibility:</strong><br>
+                            <a
+                                href="https://www.edx.org/learn/web-accessibility/w3cx-introduction-to-web-accessibility">W3Cx:
+                                Introduction to Web Accessibility</a>
+                        </li>
+                        <li>
+                            <strong>The A11y Checklist:</strong><br>
+                            <a href="https://www.a11yproject.com/checklist/">Web Accessibility Checklist — The A11Y
+                                Project</a>
+                        </li>
+                        <li>
+                            <strong>ARC Toolkit — Browser-based automated testing:</strong><br>
+                            <a href="https://www.tpgi.com/arc-platform/">TPGi ARC Toolkit</a>
+                        </li>
+                        <li>
+                            <strong>W3C Web Accessibility Initiative:</strong><br>
+                            <a href="https://www.w3.org/WAI/">W3.org/WAI</a>
+                        </li>
+                        <li>
+                            <strong>Automated unit tests for accessibility:</strong><br>
+                            <p>These tools catch ~57% of issues on average, and more in some cases—making automated
+                                testing one of the highest-leverage moves you can make.</p>
+                        </li>
+                    </ul>
+
+                    <p>Each of these resources offers a different advantage—some help you understand the principles,
+                        others help you enforce them systematically. Over the next few posts, I’ll explore how to
+                        combine them into a workflow that’s both practical and scalable.</p>
+                </section>
+
+            </article>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:leo.bergqvist@hotmail.se" class="footer__link">Get in Touch</a>
+        <a href="CV_leo_bergqvist.pdf" download class="footer__link">Download CV</a>
+    </footer>
+
+</body>
+
+</html>
