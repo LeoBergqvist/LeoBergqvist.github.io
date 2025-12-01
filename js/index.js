@@ -122,7 +122,56 @@ function createSkillsHideButton(container) {
 };
 
 
-
-
 createSkillsSection(icons);
 createTechnicalSkillsSection(iconsLists);
+
+
+const projects = [
+    {
+        link: "schedule.html",
+        img: "img_Leo/schedule_thumbnail.jpg",
+        text: "Django | Python | Web"
+    },
+    {
+        link: "climateArt.html",
+        img: "img_Leo/climateAR1_thumbnail.jpg",
+        text: "C# | Git | Unity"
+    },
+    {
+        link: "macroPhighters.html",
+        img: "img_Leo/macroPhighter_thumbnail.jpg",
+        text: "C# | Git | Unity"
+    },
+    {
+        link: "infoViz.html",
+        img: "img_Leo/staffiz_thumbnail.jpg",
+        text: "D3js | React | Web"
+    },
+    {
+        link: "arthello.html",
+        img: "img_Leo/arthello_thumbnail.jpg",
+        text: "C# | Unity"
+    },
+    {
+        link: "heardWhen.html",
+        img: "img_Leo/heard_when_thumbnail.jpg",
+        text: "Git | Vue | Web"
+    }
+];
+
+const portfolioContainer = document.getElementById("portfolio");
+
+projects.forEach(project => {
+    const item = document.createElement("a");
+    item.href = project.link;
+    item.className = "portfolio__item";
+
+    item.innerHTML = `
+        <div class="portfolio__overlay">
+            <img src="${project.img}" alt="" class="portfolio__img">
+            <div class="overlay__text">${project.text}</div>
+        </div>
+    `;
+
+    portfolioContainer.appendChild(item);
+});

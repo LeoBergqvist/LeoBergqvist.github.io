@@ -54,6 +54,7 @@ body {
     }
 }
 
+
 img {
     display: block;
     max-width: 100%;
@@ -553,6 +554,11 @@ h3 {
     }
 }
 
+.skills {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Base grid for desktop / large screens */
 .skills__list {
     display: grid;
@@ -631,6 +637,8 @@ h3 {
     display: none; */
 /* }*/
 
+
+
 .hidden-skill {
     display: none;
 }
@@ -694,5 +702,166 @@ h3 {
 
     .level-exp::before {
         box-shadow: 6px 0 #ff9800, 12px 0 #ff9800, 18px 0 #ff9800;
+    }
+}
+
+/* -------------------------------------------------- */
+/* ----------------- DARK MODE VARS ----------------- */
+/* -------------------------------------------------- */
+
+/* Manual dark mode (via .dark-mode on <body>) */
+:root.dark-mode {
+    --clr-light: #121212;
+    --clr-dark: #eaeaea;
+    --clr-accent: #ffad4f;
+    --bg-alt: #1e1e1e;
+}
+
+/* Automatic dark mode (system preference) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-light: #121212;
+        --clr-dark: #eaeaea;
+        --clr-accent: #ffad4f;
+        --bg-alt: #1e1e1e;
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* ----------------- DARK MODE BODY ----------------- */
+/* -------------------------------------------------- */
+
+body.dark-mode {
+    background: var(--clr-light);
+    background-image: none !important;
+    color: var(--clr-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--clr-light);
+        background-image: none !important;
+        color: var(--clr-dark);
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* ---------------- SECTION: MY WORK ----------------- */
+/* -------------------------------------------------- */
+
+body.dark-mode .my-work {
+    background-color: #1f1f1f;
+    color: var(--clr-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    .my-work {
+        background-color: #1f1f1f;
+        color: var(--clr-dark);
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* --------------- PORTFOLIO OVERLAYS ---------------- */
+/* -------------------------------------------------- */
+
+body.dark-mode .overlay__text {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--clr-dark);
+}
+
+body.dark-mode .portfolio__item {
+    background: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+    .overlay__text {
+        background: rgba(255, 255, 255, 0.12);
+        color: var(--clr-dark);
+    }
+
+    .portfolio__item {
+        background: #222;
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* -------------- EXPERIENCE TABLE ------------------- */
+/* -------------------------------------------------- */
+
+body.dark-mode .experience-table {
+    background: var(--clr-accent);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .experience-table thead {
+    background-color: #333;
+    color: var(--clr-dark);
+}
+
+body.dark-mode .experience-table td,
+body.dark-mode .experience-table th {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .experience-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .role-title,
+body.dark-mode .date-range,
+body.dark-mode .tech-stack,
+body.dark-mode .details-list {
+    color: var(--clr-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    .experience-table {
+        background: #1d1d1d;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    .experience-table thead {
+        background-color: #333;
+        color: var(--clr-dark);
+    }
+
+    .experience-table td,
+    .experience-table th {
+        border-bottom: 5px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .experience-table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .role-title,
+    .date-range,
+    .tech-stack,
+    .details-list {
+        color: var(--clr-dark);
+    }
+}
+
+
+/* -------------------------------------------------- */
+/* ------------------ SKILLS CARDS ------------------- */
+/* -------------------------------------------------- */
+
+body.dark-mode .skill {
+    background: var(--bg-alt);
+    color: var(--clr-dark);
+    box-shadow: rgba(255, 255, 255, 0.05) 0 1px 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .skill {
+        background: var(--bg-alt);
+        color: var(--clr-dark);
+        box-shadow: rgba(255, 255, 255, 0.05) 0 1px 2px;
     }
 }
