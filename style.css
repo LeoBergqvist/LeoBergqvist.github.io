@@ -334,6 +334,40 @@ h3 {
     opacity: .5;
 }
 
+.portfolio-item-link {
+    position: relative;
+    display: inline-block;
+    padding: 0px 22px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    /* Gradient text */
+    background: linear-gradient(90deg, #6366f1, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 8px rgba(99, 102, 241, 0.35);
+
+    /* Square outline */
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #6366f1, #22d3ee) 1;
+
+    transition:
+        letter-spacing 0.3s ease,
+        text-shadow 0.3s ease,
+        transform 0.25s ease;
+}
+
+/* Hover effect */
+.portfolio-item-link:hover {
+    letter-spacing: 1px;
+    text-shadow: 0 0 14px rgba(34, 211, 238, 0.6);
+    transform: translateY(-2px);
+}
+
+
 /* footer */
 
 .footer {
