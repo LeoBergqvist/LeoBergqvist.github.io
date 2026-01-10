@@ -159,7 +159,7 @@ const projects = [
     },
 
     {
-        link: "fretTrainer.html",
+        link: "frettrainer.html",
         img: "img_Leo/wip.png",
         text: "Git | React | Web"
     }
