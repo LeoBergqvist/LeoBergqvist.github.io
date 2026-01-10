@@ -11,13 +11,13 @@ const iconsWorkExperience = [
 
 const iconsProffecient = [
     "devicon-django-plain colored",
+    "devicon-react-original colored",
     "devicon-typescript-plain colored",
 
 ]
 
 const iconsHaveExperience = [
     "devicon-vuejs-plain colored",
-    "devicon-react-original colored",
     "devicon-csharp-plain colored",
     "devicon-unity-plain colored",
     "devicon-matlab-plain colored",
@@ -156,6 +156,12 @@ const projects = [
         link: "heardWhen.html",
         img: "img_Leo/heard_when_thumbnail.jpg",
         text: "Git | Vue | Web"
+    },
+
+    {
+        link: "fretTrainer.html",
+        img: "img_Leo/wip.png",
+        text: "Git | React | Web"
     }
 ];
 
